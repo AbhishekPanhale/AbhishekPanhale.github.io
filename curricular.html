@@ -36,7 +36,7 @@
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
 							<li><a href="https://linkedin.com/in/abhishek-panhale-8017b4103/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/RoadRaz" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://github.com/RoadRaz?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 						</ul>
 					</nav>
 
@@ -58,17 +58,109 @@
 								<article>
 									<header>
 										<!-- <span class="date">April 24, 2017</span> -->
+										<h2>Enemy AI - State Pattern</h2>
+									</header>
+									<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+									<video id="StatePatternVideo1" width="450" height="300" controls>
+										<source src="videos/StatePatternAI.mp4" type="video/mp4">
+									</video>
+									&nbsp;
+									<p class="box" style="text-align: center;">Enemy AI Simulation!</p>
+									<ul class="actions special">
+										<li><button onclick="document.getElementById('StatePattern').style.display='block';var vid = document.getElementById('StatePatternVideo1');vid.pause();" class="button primary">Project Details</button>
+											<div id="StatePattern" class="w3-modal">
+												<div class="w3-modal-content">
+												  <div class="w3-container">
+													<span onclick="document.getElementById('StatePattern').style.display='none';var vid = document.getElementById('StatePatternVideo2');vid.pause();"
+													class="button">&times;</span>
+													<hr>
+													<u><h3>Hatmancers</h3></u>
+													<video id="StatePatternVideo2" width="850" height="500" controls>
+														<source src="videos/StatePatternAI.mp4" type="video/mp4">
+													</video>
+													<div class="box">
+													<p><b>Project Description:</b> 
+													<br>
+														The simulation consists of an enemy (capsule) consisting of 4 states, namely <i>Patrol, Idle, Approach</i> and <i>Attack</i>. 
+														The enemy patrols through a set of points (idling at each point for some time), looking for the player. Once the player is detected, 
+														its state changes to approach. If the player is close enough to the enemy, its state changes to attacking, and the player loses health.
+													<br>
+													<b>Game Engine:</b>
+														Unity
+													<br>	
+													<b>Implementation using:</b>
+														C# in Visual Studio
+													<br>
+													<b>Learning:</b> 
+													<br>
+														The behaviour was achieved using the State Pattern which is an Object-oriented approach for using Finite State Machines. Each state is 
+														a class of its own, and inherits from a parent State class. The enemy itself keeps track of what its current state is.</p>
+													</div>
+													<ul class="actions special">
+														<li><a href="https://github.com/RoadRaz/GameAI/tree/main/FinalProject" class="button primary">Check Project Files</a></li>
+														<li><span onclick="document.getElementById('StatePattern').style.display='none';var vid = document.getElementById('StatePatternVideo2');vid.pause();"
+															class="button">Close</span>
+														</li>
+													</ul>
+												  </div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 24, 2017</span> -->
 										<h2>Hatmancers:World Wizarding Finals 20XX</h2>
 									</header>
 									<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
-									<video width="470" height="300" controls>
+									<video id="HatmancersVideo1" width="450" height="300" controls>
 										<source src="videos/Hatmancers.mp4" type="video/mp4">
 									</video>
-									<p>A local multiplayer third-person shooter game developed using Unity. As a wizard, pick up hats and duel against other players using hat magic to win. 
-									<br/><b>Implemented player movement using Unity and C#. Designed game-play mechanics for hats, and created the level in Unity using different 3D models
-										 made in MagicaVoxel. Created the shooting animation using Blender</b></p>
+									<p class="box" style="text-align: center;">Pick up hats, shoot spells and defeat opponents!</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/RoadRaz/Nightcap-Studios-IGME601" class="button">Check Project Files</a></li>
+										<li><button onclick="document.getElementById('Hatmancers').style.display='block';var vid = document.getElementById('HatmancersVideo1');vid.pause();" class="button primary">Project Details</button>
+											<div id="Hatmancers" class="w3-modal">
+												<div class="w3-modal-content">
+												  <div class="w3-container">
+													<span onclick="document.getElementById('Hatmancers').style.display='none';var vid = document.getElementById('HatmancersVideo2');vid.pause();"
+													class="button">&times;</span>
+													<hr>
+													<u><h3>Hatmancers</h3></u>
+													<video id="HatmancersVideo2" width="850" height="500" controls>
+														<source src="videos/Hatmancers.mp4" type="video/mp4">
+													</video>
+													<div class="box">
+													<p><b>Project Description:</b> 
+													<br>
+													A local multiplayer third-person shooter game developed using Unity. As a wizard, pick up hats and duel against other players using magic spells to win.
+													<br>
+													<b>Game Engine:</b>
+														Unity
+													<br>	
+													<b>Implementation using:</b>
+														C# in Visual Studio
+													<br>
+													<b>Additional tools:</b>
+														Blender
+													<br>
+													<b>Learning:</b> 
+													<br>
+														This was a part of my curriculum course called 'Game Development Processes'. This was my first project working in a team.
+														We followed scrum methodology for our development process. I implemented player movement, contributed towards the design decisions for mechanics of different hats and 
+														also created a shooting animation using Blender. We also conducted playtesting with kids as the target audience. It was a fun experience, 
+														doing a live playtest, keeping notes of what comments were made, and how the playtesters reacted to certain aspects of the game.</p>
+													</div>
+													<ul class="actions special">
+														<li><a href="https://github.com/RoadRaz/Nightcap-Studios-IGME601" class="button primary">Check Project Files</a></li>
+														<li><span onclick="document.getElementById('Hatmancers').style.display='none';var vid = document.getElementById('HatmancersVideo2');vid.pause();"
+															class="button">Close</span>
+														</li>
+													</ul>
+												  </div>
+												</div>
+											</div>
+										</li>
 									</ul>
 								</article>
 								<article>
@@ -76,14 +168,48 @@
 										<!-- <span class="date">April 22, 2017</span> -->
 										<h2>Escape from Hell</h2>
 									</header>
-								</br>
-                                    <a class="image fit"><img src="images/EscapeFromHellBG2.jpg" alt="" /></a>
-									<p>A paper based multiplayer board game where the goal is to reach the end gate with the twist being, 
-                                        either everyone wins, or everyone loses. Start as humans and avoid getting possessed by the demon. 
-                                        Use rotatable tiles to your advantage to dispossess the possessed (if any) and escape together. 
-                                    <br/><b>Responsible for designing the mechanics/rule sheet of the game. </b></p>
+									</br>
+                                    <a class="image"><img src="images/EscapeFromHellBG2.jpg" width="450" height="300" alt="" /></a>
+									<p class="box" style="text-align: center;">Escape together before the demon possesses you!</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/RoadRaz/escapefromhell" class="button">Check Project Files</a></li>
+										<li><button onclick="document.getElementById('HellEscape').style.display='block'" class="button primary">Project Details</button>
+											<div id="HellEscape" class="w3-modal">
+												<div class="w3-modal-content">
+												  <div class="w3-container">
+													<span onclick="document.getElementById('HellEscape').style.display='none'"
+													class="button">&times;</span>
+													<hr>
+													<u><h3>Escape from Hell</h3></u>
+													<img class="image fit" src="images/EscapeFromHellBG2.jpg" alt="" />
+													<div class="box">
+													<p><b>Project Description:</b> 
+													<br>
+														A paper based multiplayer board game where the goal is to reach the end gate with the twist being, 
+														either everyone wins, or everyone loses. Start as humans and avoid getting possessed by the demon. 
+														Use rotatable tiles to your advantage to dispossess the possessed (if any) and escape together.
+													<br>	
+													<b>Implementation using:</b>
+														Paper prototype and brainstorming
+													<br>
+													<b>Learning:</b> 
+													<br>
+														This team project was basically a part of (course - Gameplay and Prototyping) a weekly curricular game jam where the theme was board games, and 
+														we were given a restriction - either everyone wins or everyone loses. It was my first time realising how 
+														even the simplest of mechanics and a paper prototype can make games fun! Also, we ran multiple playtests 
+														among ourselves which surprisingly brought up important changes to be made in our rulesheet. We also tried 
+														to develop a digital version of this board game but it wasn't complete enough.
+													</p>
+													</div>
+													<ul class="actions special">
+														<li><a href="https://drive.google.com/file/d/1-Fc-XOr8sJvv7maPSr5fOngK7Uuldlpm/view?usp=sharing" class="button primary">Check Rule sheet</a></li>
+														<li><span onclick="document.getElementById('HellEscape').style.display='none'"
+															class="button">Close</span>
+														</li>
+													</ul>
+												  </div>
+												</div>
+											</div>
+										</li>
 									</ul>
 								</article>
 								<article>
@@ -92,16 +218,51 @@
 										<h2>Unity ECS Space</br> Simulation</h2>
 									</header>
                                     <!-- <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a> -->
-                                    <video width="470" height="300" controls>
+                                    <video id="SpaceSimulationVideo1" width="470" height="300" controls>
 										<source src="videos/SpaceSimulation.mp4" type="video/mp4">
 									</video>
-									<p>ECS Space Simulation is an attempt at exploiting the Data-Oriented approach of Unity Engine. 
-										It consists of a rotating Sun and moving asteroids, implemented using the Entity-Component-System of Unity.
-									<br/><b>Unity is coming up with a Data-Oriented development approach
-										 as an improvement over their traditional Object-Oriented development in terms of performance. 
-										 The simulation contained about a 1000 asteroid objects and still provides a 60+ FPS</b></p>
+									<p class="box" style="text-align: center;">A basic space simulation.</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/RoadRaz/ECSSpaceSim" class="button">Check Project Files</a></li>
+										<li><button onclick="document.getElementById('SpaceSimulation').style.display='block';var vid = document.getElementById('SpaceSimulationVideo1');vid.pause();" class="button primary">Project Details</button>
+											<div id="SpaceSimulation" class="w3-modal">
+												<div class="w3-modal-content">
+												  <div class="w3-container">
+													<span onclick="document.getElementById('SpaceSimulation').style.display='none';var vid = document.getElementById('SpaceSimulationVideo2');vid.pause();"
+													class="button">&times;</span>
+													<hr>
+													<u><h3>Hatmancers</h3></u>
+													<video id="SpaceSimulationVideo2" width="850" height="500" controls>
+														<source src="videos/SpaceSimulation.mp4" type="video/mp4">
+													</video>
+													<div class="box">
+														<p><b>Project Description:</b> 
+														<br>
+															ECS Space Simulation consists of a rotating Sun and moving asteroids, implemented using the Entity-Component-System of Unity.
+														<br>
+														<b>Game Engine:</b>
+															Unity
+														<br>	
+														<b>Implementation using:</b>
+															C# in Visual Studio
+														<br>
+														<b>Learning:</b> 
+														<br>
+															The project was an attempt at exploiting the Data-Oriented approach of Unity Engine. 
+															Unity is coming up with a Data-Oriented development approach
+															as an improvement over their traditional Object-Oriented development in terms of performance. 
+															The simulation contained over a 1000 asteroid objects and still provides a 60+ FPS.
+														</p>
+													</div>
+													<ul class="actions special">
+														<li><a href="https://github.com/RoadRaz/Nightcap-Studios-IGME601" class="button primary">Check Project Files</a></li>
+														<li><span onclick="document.getElementById('SpaceSimulation').style.display='none';var vid = document.getElementById('SpaceSimulationVideo2');vid.pause();"
+															class="button">Close</span>
+														</li>
+													</ul>
+												  </div>
+												</div>
+											</div>
+										</li>
 									</ul>
 								</article>
 								<article>
@@ -110,12 +271,44 @@
 										<h2>Text Adventure</h2>
 									</header>
 									<br/>
-                                     <a class="image fit"><img src="images/TextAdventureThumbnail.jpg" alt="" /></a>
-                                     <p>A simple text based game where the player has to traverse through rooms, collect all resources, and then move into the final Demon room to win and rescue a friend. 
-										Not collecting enough resources and entering the Demon room results in death.
-									<br/><b>The project made me understand some fundamental concepts as well as Data-driven approach in OOP using C#.</b></p>
+                                     <a class="image"><img src="images/TextAdventureThumbnail.jpg" width="450" height="300" alt="" /></a>
+									 <p class="box" style="text-align: center;">Find the Demon and save your friend!</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/RoadRaz/TextAdventure" class="button">Check Project Files</a></li>
+										<li><button onclick="document.getElementById('TextAdventure').style.display='block'" class="button primary">Project Details</button>
+											<div id="TextAdventure" class="w3-modal">
+												<div class="w3-modal-content">
+												  <div class="w3-container">
+													<span onclick="document.getElementById('TextAdventure').style.display='none'"
+													class="button">&times;</span>
+													<hr>
+													<u><h3>Text Adventure</h3></u>
+													<img class="image fit" src="images/TextAdventureThumbnail.jpg" alt="" />
+													<div class="box">
+													<p><b>Project Description:</b> 
+													<br>
+														A simple text-based game where the player has to traverse through rooms, collect all resources, 
+														and then move into the final Demon room to win and rescue a friend. 
+														Not collecting enough resources and entering the Demon room results in death.
+													<br>	
+													<b>Implementation using:</b>
+														C# in Visual Studio
+													<br>
+													<b>Learning:</b> 
+													<br>
+														The project made me understand some fundamental concepts of OOP using C#. I was expected to implement this in the Model-View-Controller pattern.
+														We also touched upon some concepts in Data-Driven approach. 
+													</p>
+													</div>
+													<ul class="actions special">
+														<li><a href="https://github.com/RoadRaz/TextAdventure" class="button primary">Check Project Files</a></li>
+														<li><span onclick="document.getElementById('TextAdventure').style.display='none'"
+															class="button">Close</span>
+														</li>
+													</ul>
+												  </div>
+												</div>
+											</div>
+										</li>
 									</ul>
                                 </article>
                                 <article>
@@ -124,17 +317,49 @@
 										<h2>Starry Sky</h2>
 									</header>
                                      <!-- <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a> -->
-                                     <p>A world succumbed to darkness.
-										What if something other than consciousness, controlled our state of mind?
-										Have you been a part of the wrong side to know if it is really wrong?
-										In Starry Sky, be the ultimate sword master and bring back daylight, by exterminating the creatures of the dark. 
-										That is.....until you realise you're becoming one yourself!!!
-										<br/><b>A completely design-oriented project with the end product being a Game Design Document.
-											I was more involved with Gameplay mechanics, 
-											Gameplay progression and the Level design of the first zone in this game. The overall process really helped me realise the kind of questions we need to answer, 
-											right from small details in the game itself to how a player playing the game would reciprocate.</b></p>
+									 <a class="image"><img src="images/StarrySky.png" width="450" height="300" alt="" /></a>
+									 <p class="box">Be the ultimate sword master and bring back daylight!</p>
 									<ul class="actions special">
-										<li><a href="https://github.com/RoadRaz/StarrySky" class="button">Check Design Document</a></li>
+										<li><button onclick="document.getElementById('StarrySky').style.display='block'" class="button primary">Project Details</button>
+											<div id="StarrySky" class="w3-modal">
+												<div class="w3-modal-content">
+												  <div class="w3-container">
+													<span onclick="document.getElementById('StarrySky').style.display='none'"
+													class="button">&times;</span>
+													<hr>
+													<u><h3>Escape from Hell</h3></u>
+													<img class="image fit" src="images/StarrySky.png" alt="" />
+													<div class="box">
+													<p><b>Project Description:</b> 
+													<br>
+														A world succumbed to darkness.
+														What if something other than consciousness, controlled our state of mind?
+														Have you been a part of the wrong side to know if it is really wrong?
+														In Starry Sky, be the ultimate sword master and bring back daylight, by exterminating the creatures of the dark. 
+														That is.....until you realise you're becoming one yourself!
+													<br>	
+													<b>Implementation using:</b>
+														Brainstorming and documentation
+													<br>
+													<b>Learning:</b> 
+													<br>
+														A completely design-oriented project with the end product being an initial draft of a Game Design Document.
+														I was more involved with gameplay mechanics, gameplay progression, and the level design of the first zone in 
+														this game. The overall process really helped me realise that a lot of different aspects are considered. 
+														Right from small details in the game itself to psychology of the player playing it. It was fun brainstorming the 
+														game concepts and because we did not have to implement this, we went pretty crazy with our ideas.
+													</p>
+													</div>
+													<ul class="actions special">
+														<li><a href="https://github.com/RoadRaz/StarrySky" class="button primary">Check Document Draft</a></li>
+														<li><span onclick="document.getElementById('StarrySky').style.display='none'"
+															class="button">Close</span>
+														</li>
+													</ul>
+												  </div>
+												</div>
+											</div>
+										</li>
 									</ul>
                                 </article>
                                 <article>
@@ -143,7 +368,8 @@
 									</header>									
 									<ul style="text-align: left;">
 										<i>
-											<li>A chef-themed stealth game using Unreal Engine 4.</li>
+											<li>A chef-themed stealth game using Unity Game Engine.</li>
+											<li>You can find more projects that I contributed to here: <a href="https://github.com/RoadRaz?tab=repositories">Github - Abhishek Panhale</a>
 										</i>
 									</ul>
 								</article>
