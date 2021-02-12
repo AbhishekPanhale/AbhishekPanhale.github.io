@@ -3938,10 +3938,12 @@ input, select, textarea {
 
 				#main > .posts > article:nth-child(n) {
 					border-left-width: 0;
+					margin-bottom: 55px;
 				}
 
 				#main > .posts > article:nth-child(-n + 1) {
 					border-top-width: 0;
+					margin-bottom: 40px;
 				}
 
 				#main > .posts > article .image {
