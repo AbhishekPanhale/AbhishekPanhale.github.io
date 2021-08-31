@@ -58,6 +58,64 @@
 								<article>
 									<header>
 										<!-- <span class="date">April 24, 2017</span> -->
+										<h2>Just Chefin!</h2>
+									</header>
+									<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
+									<video id="JustChefinVideo1" width=100% height=50% controls>
+										<source src="videos/JustChefin - Cafeteria.mp4" type="video/mp4">
+									</video>
+									&nbsp;
+									<div class="box">
+										<p style="text-align: center;">Steal signature recipes as a stealthy chef!</p>
+										<ul class="actions special">
+											<li><button onclick="document.getElementById('JustChefin').style.display='block';var vid = document.getElementById('JustChefinVideo1');vid.pause();" class="button primary">Project Details</button>
+												<div id="JustChefin" class="w3-modal">
+													<div class="w3-modal-content">
+													<div class="w3-container">
+														<span onclick="document.getElementById('JustChefin').style.display='none';var vid = document.getElementById('JustChefinVideo2');vid.pause();"
+														class="button">&times;</span>
+														<hr>
+														<u><h3>Just Chefin!</h3></u>
+														<video id="JustChefinVideo2" width=100% height=50% controls>
+															<source src="videos/JustChefin - Cafeteria.mp4" type="video/mp4">
+														</video>
+														<div class="box">
+														<p><b>Project Description:</b> 
+														<br>
+															<i>Just Chefin!</i> is a stealth game in which the player takes the role of a chef that infiltrates various restaurants 
+															in order to steal their signature recipe, all while fulfilling the orders that are provided to them by the wait staff.
+														<br>
+														<b>Game Engine:</b>
+															Unity
+														<br>	
+														<b>Implementation using:</b>
+															C# in Visual Studio
+														<br>
+														<b>Learning:</b> 
+														<br>
+															This was my capstone project where I was a part of a team of 3 members consisting of a lead generalist, a designer and a programmer (myself).
+															This experience was both fun and frustrating as I learnt a lot about how important it is for a game to have a solid concept that can be convincingly pitched
+															and where different aspects of design tie together well. I was responsible for implementing the player movement, environmental interactions of the player and the enemy behavior. 
+															I also coded some gameplay aspects like fog of war, fading walls, and animation as well as particle effects for fire alarms and pickups respectively.
+															This project enabled me to apply the State Pattern design pattern that I had tried in my other projects, for the enemy behaviour.
+															Two levels were created, one of which is shown (Cafeteria) in the video above. The other level video can be found by clicking '<i>Check Project Files</i>' below.</p>
+														</div>
+														<ul class="actions special">
+															<li><a href="https://github.com/RoadRaz/JustChefin" class="button primary">Check Project Files</a></li>
+															<li><span onclick="document.getElementById('JustChefin').style.display='none';var vid = document.getElementById('JustChefinVideo2');vid.pause();"
+																class="button">Close</span>
+															</li>
+														</ul>
+													</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</article>
+								<article>
+									<header>
+										<!-- <span class="date">April 24, 2017</span> -->
 										<h2>Enemy AI - State Pattern</h2>
 									</header>
 									<!-- <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a> -->
