@@ -10,7 +10,23 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/apanhale.jpg" type="image/x-icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			/* Responsive: stack on small screens */
+			@media screen and (max-width: 768px) {
+				.intro-box {
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+				}
+
+				.intro-text {
+					text-align: left;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -35,9 +51,9 @@
 							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-							<li><a href="https://linkedin.com/in/abhishek-panhale-8017b4103/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/RoadRaz?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://drive.google.com/file/d/1iRxPFqIPup9yvLnecf5zZ1_07P6sDf0T/view?usp=drive_link" class="icon brands fa-wpforms"><span class="label">Resume</span></a></li>
+							<li><a href="https://linkedin.com/in/abhishek-panhale-8017b4103/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/RoadRaz?tab=repositories" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://drive.google.com/file/d/1iRxPFqIPup9yvLnecf5zZ1_07P6sDf0T/view?usp=drive_link" target="_blank" class="icon solid fa-file-alt"><span class="label">Resume</span></a></li>
 						</ul>
 					</nav>
 
@@ -61,7 +77,12 @@
 										<!-- <span class="date">April 24, 2017</span> -->
 										<h2>Marvel Studios' What If...? <br>- An Immersive Story</h2>
 									</header>
-									<a href="https://youtu.be/lLk-IkPktMo?si=MNkT4NnNFw48MAEI" class="image fit"><img src="images/WhatIf.jfif" alt="" /></a>
+									<div class="video-thumbnail">
+										<a href="https://youtu.be/lLk-IkPktMo?si=MNkT4NnNFw48MAEI" target="_blank" class="image fit">
+											<img src="images/WhatIf.jfif" alt="Marvel What If Trailer Thumbnail" />
+											<span class="play-icon">&#9658;</span>
+										</a>
+									</div>
 									<!--<video id="JustChefinVideo1" width=100% height=50% controls>
 										<source src="videos/JustChefin - Cafeteria.mp4" type="video/mp4">
 									</video>-->
@@ -165,8 +186,14 @@
 										<!-- <span class="date">April 24, 2017</span> -->
 										<h2>GTA VI</h2>
 									</header>
-									<a href="https://www.youtube.com/watch?v=QdBZY2fkU-0" class="image fit"><img src="images/GTA6.png" alt="" /></a>
-									<!--<video id="JustChefinVideo1" width=100% height=50% controls>
+									<div class="video-thumbnail">
+										<a href="https://www.youtube.com/watch?v=QdBZY2fkU-0" target="_blank" class="image fit">
+											<img src="images/GTA6.png" alt="GTA 6 Trailer 1" />
+											<span class="play-icon">&#9658;</span>
+										</a>
+									</div>
+									<!--<a href="https://www.youtube.com/watch?v=QdBZY2fkU-0" class="image fit"><img src="images/GTA6.png" alt="" /></a>
+									<video id="JustChefinVideo1" width=100% height=50% controls>
 										<source src="videos/JustChefin - Cafeteria.mp4" type="video/mp4">
 									</video>-->
 									&nbsp;
@@ -214,8 +241,14 @@
 										<!-- <span class="date">April 24, 2017</span> -->
 										<h2>Just Chefin!</h2>
 									</header>
-									<a href="https://drive.google.com/drive/folders/1jcM-p6EszX07oODjhwU7Nsd7qp95Oe0_?usp=sharing" class="image fit"><img src="images/JustChefin.PNG" alt="" /></a>
-									<!--<video id="JustChefinVideo1" width=100% height=50% controls>
+									<div class="video-thumbnail">
+										<a href="https://drive.google.com/drive/folders/1jcM-p6EszX07oODjhwU7Nsd7qp95Oe0_?usp=sharing" target="_blank" class="image fit">
+											<img src="images/JustChefin.PNG" alt="Just Chefin! gameplay videos" />
+											<span class="play-icon">&#9658;</span>
+										</a>
+									</div>
+									<!--<a href="https://drive.google.com/drive/folders/1jcM-p6EszX07oODjhwU7Nsd7qp95Oe0_?usp=sharing" class="image fit"><img src="images/JustChefin.PNG" alt="" /></a>
+									<video id="JustChefinVideo1" width=100% height=50% controls>
 										<source src="videos/JustChefin - Cafeteria.mp4" type="video/mp4">
 									</video>-->
 									&nbsp;
@@ -256,7 +289,7 @@
 															This project enabled me to apply the State Pattern design pattern that I had tried in my other projects, for the enemy behaviour.</p>
 														</div>
 														<ul class="actions special">
-															<li><a href="https://github.com/RoadRaz/JustChefin" class="button primary">Check Project Files</a></li>
+															<li><a href="https://github.com/RoadRaz/JustChefin" target="_blank" class="button primary">Check Project Files</a></li>
 															<li><span onclick="document.getElementById('JustChefin').style.display='none';var vid = document.getElementById('JustChefinVideo2');vid.pause();"
 																class="button">Close</span>
 															</li>
@@ -311,7 +344,7 @@
 															a class of its own, and inherits from a parent State class. The enemy itself keeps track of what its current state is.</p>
 														</div>
 														<ul class="actions special">
-															<li><a href="https://github.com/RoadRaz/GameAI/tree/main/FinalProject" class="button primary">Check Project Files</a></li>
+															<li><a href="https://github.com/RoadRaz/GameAI/tree/main/FinalProject" target="_blank" class="button primary">Check Project Files</a></li>
 															<li><span onclick="document.getElementById('StatePattern').style.display='none';var vid = document.getElementById('StatePatternVideo2');vid.pause();"
 																class="button">Close</span>
 															</li>
@@ -328,8 +361,14 @@
 										<!-- <span class="date">April 24, 2017</span> -->
 										<h2>Hatmancers:World Wizarding Finals 20XX</h2>
 									</header>
-									<a href="https://drive.google.com/drive/folders/1H0ZO3P39tMK-3fP3uW3ACd8_SKSzfUnV?usp=sharing" class="image fit"><img src="images/Hatmancers.PNG" alt="" /></a>
-									<!--<video id="HatmancersVideo1" width=100% height=50% controls>
+									<div class="video-thumbnail">
+										<a href="https://drive.google.com/drive/folders/1H0ZO3P39tMK-3fP3uW3ACd8_SKSzfUnV?usp=sharing" target="_blank" class="image fit">
+											<img src="images/Hatmancers.PNG" alt="Hatmancers gameplay video" />
+											<span class="play-icon">&#9658;</span>
+										</a>
+									</div>
+									<!--<a href="https://drive.google.com/drive/folders/1H0ZO3P39tMK-3fP3uW3ACd8_SKSzfUnV?usp=sharing" class="image fit"><img src="images/Hatmancers.PNG" alt="" /></a>
+									<video id="HatmancersVideo1" width=100% height=50% controls>
 										<source src="https://drive.google.com/drive/folders/1H0ZO3P39tMK-3fP3uW3ACd8_SKSzfUnV?usp=sharing" type="video/mp4">
 									</video>-->
 									<div class="box">
@@ -369,7 +408,7 @@
 															doing a live playtest, keeping notes of what comments were made, and how the playtesters reacted to certain aspects of the game.</p>
 														</div>
 														<ul class="actions special">
-															<li><a href="https://github.com/RoadRaz/Nightcap-Studios-IGME601" class="button primary">Check Project Files</a></li>
+															<li><a href="https://github.com/RoadRaz/Nightcap-Studios-IGME601" target="_blank" class="button primary">Check Project Files</a></li>
 															<li><span onclick="document.getElementById('Hatmancers').style.display='none';var vid = document.getElementById('HatmancersVideo2');vid.pause();"
 																class="button">Close</span>
 															</li>
@@ -422,7 +461,7 @@
 														</p>
 														</div>
 														<ul class="actions special">
-															<li><a href="https://drive.google.com/file/d/1-Fc-XOr8sJvv7maPSr5fOngK7Uuldlpm/view?usp=sharing" class="button primary">Check Rule sheet</a></li>
+															<li><a href="https://drive.google.com/file/d/1-Fc-XOr8sJvv7maPSr5fOngK7Uuldlpm/view?usp=sharing" target="_blank" class="button primary">Check Rule sheet</a></li>
 															<li><span onclick="document.getElementById('HellEscape').style.display='none'"
 																class="button">Close</span>
 															</li>
@@ -477,7 +516,7 @@
 															</p>
 														</div>
 														<ul class="actions special">
-															<li><a href="https://github.com/RoadRaz/Nightcap-Studios-IGME601" class="button primary">Check Project Files</a></li>
+															<li><a href="https://github.com/RoadRaz/Nightcap-Studios-IGME601" target="_blank" class="button primary">Check Project Files</a></li>
 															<li><span onclick="document.getElementById('SpaceSimulation').style.display='none';var vid = document.getElementById('SpaceSimulationVideo2');vid.pause();"
 																class="button">Close</span>
 															</li>
@@ -524,7 +563,7 @@
 														</p>
 														</div>
 														<ul class="actions special">
-															<li><a href="https://github.com/RoadRaz/TextAdventure" class="button primary">Check Project Files</a></li>
+															<li><a href="https://github.com/RoadRaz/TextAdventure" target="_blank" class="button primary">Check Project Files</a></li>
 															<li><span onclick="document.getElementById('TextAdventure').style.display='none'"
 																class="button">Close</span>
 															</li>
@@ -577,7 +616,7 @@
 														</p>
 														</div>
 														<ul class="actions special">
-															<li><a href="https://github.com/RoadRaz/StarrySky" class="button primary">Check Document Draft</a></li>
+															<li><a href="https://github.com/RoadRaz/StarrySky" target="_blank" class="button primary">Check Document Draft</a></li>
 															<li><span onclick="document.getElementById('StarrySky').style.display='none'"
 																class="button">Close</span>
 															</li>
